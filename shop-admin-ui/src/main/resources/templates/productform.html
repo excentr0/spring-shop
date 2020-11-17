@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="au theme template" name="description">
+    <meta content="Hau Nguyen" name="author">
+    <meta content="au theme template" name="keywords">
+
+    <!-- Title Page-->
+    <title>Редактирование товара</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="/css/font-face.css" media="all" rel="stylesheet">
+    <link href="/vendor/font-awesome-5/css/fontawesome-all.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/font-awesome-4.7/css/font-awesome.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/mdi-font/css/material-design-iconic-font.min.css" media="all" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="/vendor/bootstrap-4.1/bootstrap.min.css" media="all" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="/vendor/animsition/animsition.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/wow/animate.css" media="all" rel="stylesheet">
+    <link href="/vendor/css-hamburgers/hamburgers.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/slick/slick.css" media="all" rel="stylesheet">
+    <link href="/vendor/select2/select2.min.css" media="all" rel="stylesheet">
+    <link href="/vendor/perfect-scrollbar/perfect-scrollbar.css" media="all" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <link href="/css/theme.css" media="all" rel="stylesheet">
+
+</head>
+
+<body class="animsition">
+<div class="page-wrapper">
+
+    <!-- MENU SIDEBAR-->
+    <th:block th:insert="~{index :: left-menu}"></th:block>
+    <!-- END MENU SIDEBAR-->
+
+    <!-- PAGE CONTAINER-->
+    <div class="page-container">
+        <!-- HEADER DESKTOP-->
+        <header class="header-desktop">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="header-wrap">
+                        <form action="" class="form-header" method="POST">
+                            <input class="au-input au-input--xl" name="search"
+                                   placeholder="Search for datas &amp; reports..." type="text"/>
+                            <button class="au-btn--submit" type="submit">
+                                <i class="zmdi zmdi-search"></i>
+                            </button>
+                        </form>
+                        <div class="header-button">
+                            <div class="noti-wrap">
+                                <div class="noti__item js-item-menu">
+                                    <i class="zmdi zmdi-comment-more"></i>
+                                    <span class="quantity">1</span>
+                                    <div class="mess-dropdown js-dropdown">
+                                        <div class="mess__title">
+                                            <p>You have 2 news message</p>
+                                        </div>
+                                        <div class="mess__item">
+                                            <div class="image img-cir img-40">
+                                                <img alt="Michelle Moreno" src="/images/icon/avatar-06.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Michelle Moreno</h6>
+                                                <p>Have sent a photo</p>
+                                                <span class="time">3 min ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="mess__item">
+                                            <div class="image img-cir img-40">
+                                                <img alt="Diane Myers" src="/images/icon/avatar-04.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Diane Myers</h6>
+                                                <p>You are now connected on message</p>
+                                                <span class="time">Yesterday</span>
+                                            </div>
+                                        </div>
+                                        <div class="mess__footer">
+                                            <a href="#">View all messages</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="noti__item js-item-menu">
+                                    <i class="zmdi zmdi-email"></i>
+                                    <span class="quantity">1</span>
+                                    <div class="email-dropdown js-dropdown">
+                                        <div class="email__title">
+                                            <p>You have 3 New Emails</p>
+                                        </div>
+                                        <div class="email__item">
+                                            <div class="image img-cir img-40">
+                                                <img alt="Cynthia Harvey" src="/images/icon/avatar-06.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <p>Meeting about new dashboard...</p>
+                                                <span>Cynthia Harvey, 3 min ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="email__item">
+                                            <div class="image img-cir img-40">
+                                                <img alt="Cynthia Harvey" src="/images/icon/avatar-05.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <p>Meeting about new dashboard...</p>
+                                                <span>Cynthia Harvey, Yesterday</span>
+                                            </div>
+                                        </div>
+                                        <div class="email__item">
+                                            <div class="image img-cir img-40">
+                                                <img alt="Cynthia Harvey" src="/images/icon/avatar-04.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <p>Meeting about new dashboard...</p>
+                                                <span>Cynthia Harvey, April 12,,2018</span>
+                                            </div>
+                                        </div>
+                                        <div class="email__footer">
+                                            <a href="#">See all emails</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="noti__item js-item-menu">
+                                    <i class="zmdi zmdi-notifications"></i>
+                                    <span class="quantity">3</span>
+                                    <div class="notifi-dropdown js-dropdown">
+                                        <div class="notifi__title">
+                                            <p>You have 3 Notifications</p>
+                                        </div>
+                                        <div class="notifi__item">
+                                            <div class="bg-c1 img-cir img-40">
+                                                <i class="zmdi zmdi-email-open"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>You got a email notification</p>
+                                                <span class="date">April 12, 2018 06:50</span>
+                                            </div>
+                                        </div>
+                                        <div class="notifi__item">
+                                            <div class="bg-c2 img-cir img-40">
+                                                <i class="zmdi zmdi-account-box"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Your account has been blocked</p>
+                                                <span class="date">April 12, 2018 06:50</span>
+                                            </div>
+                                        </div>
+                                        <div class="notifi__item">
+                                            <div class="bg-c3 img-cir img-40">
+                                                <i class="zmdi zmdi-file-text"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>You got a new file</p>
+                                                <span class="date">April 12, 2018 06:50</span>
+                                            </div>
+                                        </div>
+                                        <div class="notifi__footer">
+                                            <a href="#">All notifications</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-wrap">
+                                <div class="account-item clearfix js-item-menu">
+                                    <div class="image">
+                                        <img alt="John Doe" src="/images/icon/avatar-01.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <a class="js-acc-btn" href="#">john doe</a>
+                                    </div>
+                                    <div class="account-dropdown js-dropdown">
+                                        <div class="info clearfix">
+                                            <div class="image">
+                                                <a href="#">
+                                                    <img alt="John Doe" src="/images/icon/avatar-01.jpg"/>
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="name">
+                                                    <a href="#">john doe</a>
+                                                </h5>
+                                                <span class="email">johndoe@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="account-dropdown__body">
+                                            <div class="account-dropdown__item">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-account"></i>Account</a>
+                                            </div>
+                                            <div class="account-dropdown__item">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-settings"></i>Setting</a>
+                                            </div>
+                                            <div class="account-dropdown__item">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                            </div>
+                                        </div>
+                                        <div class="account-dropdown__footer">
+                                            <a href="#">
+                                                <i class="zmdi zmdi-power"></i>Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER DESKTOP-->
+
+        <!-- MAIN CONTENT-->
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">Редактирование товара</div>
+                            <div class="card-body card-block">
+                                <form action="#" enctype="multipart/form-data" method="post"
+                                      th:action="@{/products/update}" th:object="${product}">
+                                    <div class="form-group">
+                                        <label>
+                                            <input th:field="*{id}" th:type="hidden">
+                                        </label>
+                                        <div class="input-group">
+                                            <label for="name"></label>
+                                            <input class="form-control" id="name"
+                                                   name="name" placeholder="Название"
+                                                   th:field="*{name}" type="text">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label for="price"></label>
+                                            <input class="form-control" id="price"
+                                                   name="price" placeholder="Цена"
+                                                   th:field="*{price}" type="number">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <label for="description"></label>
+                                            <input class="form-control"
+                                                   id="description"
+                                                   name="description"
+                                                   placeholder="Описание"
+                                                   th:field="*{description}"
+                                                   type="text">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-asterisk"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col col-md-3">
+                                            <label class=" form-control-label" for="brand">Brand</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <select class="form-control" id="brand" name="brand"
+                                                    th:field="*{brand}">
+                                                <option th:each="brnd: ${brands}" th:text="${brnd.name}"
+                                                        th:value="${brnd.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col col-md-3">
+                                            <label class=" form-control-label" for="category">Категория</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <select class="form-control" id="category" name="category"
+                                                    th:field="*{category}">
+                                                <option th:each="cats: ${categories}" th:text="${cats.name}"
+                                                        th:value="${cats.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col col-md-3">
+                                            <label for="newPictures">Images</label>
+                                        </div>
+                                        <input class="form-control-file" id="newPictures" multiple
+                                               placeholder="Upload Images"
+                                               th:field="*{newPictures}" type="file">
+                                    </div>
+
+                                    <div class="form-actions form-group">
+                                        <button class="btn btn-secondary btn-sm" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                                <div class="container-fluid col-md-9">
+                                    <div class="card-columns" style="column-count: 5">
+                                        <div class="card" th:each="pic: ${product.pictures}">
+                                            <div class="card-header">Picture</div>
+                                            <img class="card-img-bottom"
+                                                 th:src="@{/picture/{pictureId}(pictureId=${pic.id})}" width="40%"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a
+                                    href="https://colorlib.com">Colorlib</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<th:block th:insert="~{index :: bottom-scripts}"></th:block>
+
+</body>
+
+</html>
+<!-- end document-->
