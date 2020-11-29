@@ -22,6 +22,8 @@
         <module>picture-service</module>
         <module>shop-config</module>
         <module>picture-service-app</module>
+        <module>shop-eureka</module>
+        <module>shop-gataway</module>
     </modules>
 
     <packaging>pom</packaging>
