@@ -23,7 +23,7 @@
         <module>shop-config</module>
         <module>picture-service-app</module>
         <module>shop-eureka</module>
-        <module>shop-gataway</module>
+        <module>shop-gateway</module>
     </modules>
 
     <packaging>pom</packaging>
