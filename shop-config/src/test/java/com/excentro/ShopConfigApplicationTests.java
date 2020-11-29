@@ -1,4 +1,4 @@
-package com.excentro.shopconfig;
+package com.excentro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

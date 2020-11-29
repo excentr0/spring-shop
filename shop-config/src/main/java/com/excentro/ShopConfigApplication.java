@@ -1,4 +1,4 @@
-package com.excentro.shopconfig;
+package com.excentro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
