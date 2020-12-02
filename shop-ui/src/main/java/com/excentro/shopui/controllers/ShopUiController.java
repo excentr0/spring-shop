@@ -4,14 +4,12 @@ import com.excentro.persist.repo.BrandRepository;
 import com.excentro.service.CategoryService;
 import com.excentro.service.ProductService;
 import com.excentro.shopui.service.CartService;
-
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import lombok.AllArgsConstructor;
 
 @Controller
 @RequestMapping("/")

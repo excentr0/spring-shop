@@ -385,15 +385,15 @@ Purchase Premium Metronic Admin Theme: http:/themeforest.net/item/metronic-respo
                         <div class="col-md-6 col-sm-6">
                             <div class="product-main-image">
                                 <img alt="" class="img-responsive" th:alt="${product.description}"
-                                     th:attr='data-BigImgsrc=@{/picture/{pictureId}(pictureId=${product.pictures.get(0).id})}'
-                                     th:src="@{/picture/{pictureId}(pictureId=${product.pictures.get(0).id})}">
+                                     th:attr='data-BigImgsrc=@{{pictureServiceUrl}/picture/{pictureId}(pictureId=${product.pictures.get(0).id},pictureServiceUrl=${pictureServiceUrl})}'
+                                     th:src="@{{pictureServiceUrl}/picture/{pictureId}(pictureId=${product.pictures.get(0).id},pictureServiceUrl=${pictureServiceUrl})}">
                             </div>
                             <div class="product-other-images" th:if="${#lists.size(product.pictures)>1}">
                                 <th:block th:each="i : ${#numbers.sequence(1, product.pictures.size()-1)}">
                                     <a class="fancybox-button" rel="photos-lib"
                                        th:href="@{/picture/{pictureId}(pictureId=${product.pictures.get(i).id})}">
                                         <img alt="Berry Lace Dress"
-                                             th:src="@{/picture/{pictureId}(pictureId=${product.pictures.get(i).id})}"></a>
+                                             th:src="@{{pictureServiceUrl}/picture/{pictureId}(pictureId=${product.pictures.get(i).id},pictureServiceUrl=${pictureServiceUrl})}"></a>
                                 </th:block>
                             </div>
                         </div>

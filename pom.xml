@@ -20,6 +20,10 @@
         <module>shop-admin-ui</module>
         <module>shop-ui</module>
         <module>picture-service</module>
+        <module>shop-config</module>
+        <module>picture-service-app</module>
+        <module>shop-eureka</module>
+        <module>shop-gateway</module>
     </modules>
 
     <packaging>pom</packaging>

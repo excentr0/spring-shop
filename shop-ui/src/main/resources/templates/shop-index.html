@@ -572,7 +572,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                         <div class="product-item">
                             <div class="pi-img-wrapper">
                                 <img alt="@{prod.name}" class="img-responsive"
-                                     th:src="@{/picture/{pictureId}(pictureId=${prod.pictures.get(0).id})}">
+                                     th:src="@{{pictureServiceUrl}/picture/{pictureId}(pictureId=${prod.pictures.get(0).id}, pictureServiceUrl=${pictureServiceUrl})}">
                                 <div>
                                     <a class="btn btn-default fancybox-button"
                                        th:href="@{/picture/{pictureId}(pictureId=${prod.pictures.get(0).id})}">Zoom</a>
